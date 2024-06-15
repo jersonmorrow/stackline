@@ -5,8 +5,8 @@ import { RootState } from "../../app/store";
 import classes from "./SalesChart.module.css";
 
 interface SalesData {
-  weekEnding: string;
-  retailSales: Date;
+  weekEnding: Date;
+  retailSales: number;
 }
 
 const useAppSelector = useSelector.withTypes<RootState>();
